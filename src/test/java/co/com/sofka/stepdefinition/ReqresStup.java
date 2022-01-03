@@ -7,8 +7,6 @@ import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 
-
-
 public class ReqresStup {
 
     private static final String BASE_URL ="https://reqres.in";
@@ -18,7 +16,6 @@ public class ReqresStup {
 
     protected void generalSetup(){
         configurationForRestAssured();
-
     }
 
     private void configurationForRestAssured(){
@@ -28,6 +25,5 @@ public class ReqresStup {
         RestAssured.requestSpecification = new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
                 .build();
-
     }
 }
